@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "get",
+            "program": "${workspaceFolder}/app.js",
+            "env": {
+                "GOOGLE_APPLICATION_CREDENTIALS": "/home/rafael/gcp/qa.json"
+            },
+            "args": ["-v", "-c", "PartnerRedemption:Order", "get", "00e71eee-5895-5b02-aa76-baf718ed6390", "-r"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "update-field",
+            "program": "${workspaceFolder}/app.js",
+            "env": {
+                "GOOGLE_APPLICATION_CREDENTIALS": "/home/rafael/gcp/qa.json"
+            },
+            "args": ["-v", "-c", "PartnerRedemption:Order", "update-field", "00e71eee-5895-5b02-aa76-baf718ed6390", "test", "true", "-s"]
+        }
+    ]
+}

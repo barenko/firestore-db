@@ -1,0 +1,16 @@
+{
+  "name": "partner-redemption-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^8.6.1",
+    "really-relaxed-json": "^0.2.24",
+    "yargs": "^14.2.0"
+  }
+}
